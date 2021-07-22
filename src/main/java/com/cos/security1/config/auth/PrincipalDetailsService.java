@@ -16,7 +16,7 @@ public class PrincipalDetailsService implements UserDetailsService{
 
 	@Autowired
 	private UserRepository userRepository;
-	
+	//함수 종료시 @AuthenticationPrincipal 어노테이션이 만들어진다.
 	@Override
 	//로그인 창의 name=username이 그대로 넘어오므로 이름 설성 주의
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
